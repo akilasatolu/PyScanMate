@@ -87,7 +87,7 @@
 
 指定のディレクトリ配下でキーワードでGrepを行う。
 
-戻り値は、`[{'keyword': str, 'isUsed': bool, 'where': []}, {'keyword': str, 'isUsed': bool, 'where': [{'file': str, 'line': [num, num, ...]}, ...]}, ...]`
+戻り値は、`[{'keyword': str, 'isUsed': bool, 'where': []}, {'keyword': str, 'isUsed': bool, 'where': [{'file': str, 'line': [int, int, ...]}, ...]}, ...]`
 
 `keyword`は検索するキーワード、`isUsed`は使用されていれは`True`なければ`False`を返す。
 `where`には使用しているファイル情報が記載されている。
@@ -108,5 +108,31 @@
 検索するキーワードのリスト。
 
 例 : `['.js','txt']` `['import', export]`
+
+============================
+
+### `countLine(path, trimBlank)`
+
+指定のディレクトリ配下にある全ファイルのコード量をカウントする。
+
+戻り値は、`0` `12` `int`
+
+---
+
+`path`
+
+指定したいディレクトリの相対パスを記載する。
+
+例 : `test/src`
+
+---
+
+`trimBlank`（省略可）
+
+空行を無視するかどうか。
+デフォルトは`False`で無視しない。
+`True`で無視する。
+
+例 : `True` `False`
 
 ============================

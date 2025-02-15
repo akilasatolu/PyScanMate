@@ -57,3 +57,17 @@ def grep(path, keywords):
             keywordInfo['isUsed'] = True
             grepResult.append(keywordInfo)
     return grepResult
+
+def countLine(path, trimBlank = False):
+    lineCounter = 0
+    targetFiles = getFiles(path)
+    for file in targetFiles:
+        try:
+            with open(file, encoding = 'UTF-8') as f:
+                for l in f:
+                    if trimBlank and l.isspace():
+                        continue
+                    lineCounter += 1
+        except Exception:
+            print(file + 'でエラー')
+    return lineCounter
