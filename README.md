@@ -2,6 +2,56 @@
 
 ## How to use
 
+### 1, 仮想環境準備（必要なら）
+
+適当なディレクトリを作成して、ターミナルを開く
+
+・仮想環境準備
+
+`python -m venv venv`
+
+・仮想環境起動
+
+`. venv/bin/activate`
+
+---
+
+### 2, install package
+
+・インストール
+
+`pip install git+https://github.com/akilasatolu/PyScanMate.git`
+
+・インストール確認
+
+`pip list`
+
+---
+
+### 3, 使ってみよう
+
+適当な`.py`ファイルを作成して、packageをimportして使ってみよう
+
+`import pyscanmate`
+
+`pyscanmate.モジュール名()`
+
+---
+
+### 4, お片付け
+
+・アンインストール
+
+`pip uninstall pyscanmate`
+
+・仮想環境終了
+
+`pip uninstall pyscanmate`
+
+・アンインストール確認
+
+`pip list`
+
 ## 関数一覧
 
 ============================
