@@ -46,11 +46,19 @@
 
 ・仮想環境終了
 
-`pip uninstall pyscanmate`
+`deactivate`
 
 ・アンインストール確認
 
 `pip list`
+
+---
+
+### 5, その他
+
+・アップグレード
+
+`pip install –upgrade pyscanmate`
 
 ## 関数一覧
 
