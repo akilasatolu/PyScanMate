@@ -1,4 +1,4 @@
-**/test/
-*/test.py
-**/__pycache__/
+**/test
+**/test.py
+**/__pycache__
 **/.DS_Store

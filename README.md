@@ -6,7 +6,7 @@
 
 ============================
 
-### `getFiles(path, reg, hidden)`
+### `get_files(path, reg, hidden)`
 
 指定したディレクトリ配下のファイル名を全取得する。
 
@@ -47,18 +47,18 @@
 
 ============================
 
-### `formatTxt(strList, beforeReg, after)`
+### `format_txt(str_list, before_reg, after)`
 
 リストの文字列を置換する。
 
 戻り値は、`[]` `[str, str, ...]`
 
-`strList`が空の場合はそのまま返す。
+`str_list`が空の場合はそのまま返す。
 置換後のリストを返す。
 
 ---
 
-`strList`
+`str_list`
 
 文字列の入った配列。
 
@@ -66,7 +66,7 @@
 
 ---
 
-`beforeReg`
+`before_reg`
 
 置換対象。文字列または正規表現。
 
@@ -89,9 +89,9 @@
 
 指定のディレクトリ配下でキーワードでGrepを行う。
 
-戻り値は、`[{'keyword': str, 'isUsed': bool, 'where': []}, {'keyword': str, 'isUsed': bool, 'where': [{'file': str, 'line': [int, int, ...]}, ...]}, ...]`
+戻り値は、`[{'keyword': str, 'is_used': bool, 'where': []}, {'keyword': str, 'is_used': bool, 'where': [{'file': str, 'line': [int, int, ...]}, ...]}, ...]`
 
-`keyword`は検索するキーワード、`isUsed`は使用されていれは`True`なければ`False`を返す。
+`keyword`は検索するキーワード、`is_used`は使用されていれは`True`なければ`False`を返す。
 `where`には使用しているファイル情報が記載されている。
 `file`はファイル名、`line`は行番号がリストに格納されている。
 
@@ -113,7 +113,7 @@
 
 ============================
 
-### `countLine(path, trimBlank)`
+### `count_line(path, trim_blank)`
 
 指定のディレクトリ配下にある全ファイルのコード量をカウントする。
 
@@ -129,7 +129,7 @@
 
 ---
 
-`trimBlank`（省略可）
+`trim_blank`（省略可）
 
 空行を無視するかどうか。
 デフォルトは`False`で無視しない。
