@@ -19,9 +19,8 @@ def get_files(path, reg = r'.*$', hidden = False):
             full_path = os.path.join(path, item)
             if os.path.isfile(full_path):
                 if reg_ptn.search(item):
-                    ft(full_path, r'\\', '/')
                     files.append(full_path)
                 continue
             find_file(full_path)
     find_file(path)
-    return files
+    return ft(files, r'\\', '/')
