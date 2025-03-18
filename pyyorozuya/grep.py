@@ -1,4 +1,4 @@
-from pyscanmate.get_files import get_files as gf
+from pyyorozuya.get_files import get_files as gf
 
 def grep(path, keywords):
     grep_result = []

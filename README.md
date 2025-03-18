@@ -1,4 +1,4 @@
-# PyScanMate
+# PyYorozuya
 
 ## How to use
 
@@ -20,7 +20,7 @@
 
 ・インストール
 
-`pip install git+https://github.com/akilasatolu/PyScanMate.git`
+`pip install git+https://github.com/akilasatolu/PyYorozuya.git`
 
 ・インストール確認
 
@@ -32,9 +32,9 @@
 
 適当な`.py`ファイルを作成して、packageをimportして使ってみよう
 
-`import pyscanmate`
+`import pyyorozuya`
 
-`pyscanmate.モジュール名()`
+`pyyorozuya.モジュール名()`
 
 ---
 
@@ -42,7 +42,7 @@
 
 ・アンインストール
 
-`pip uninstall pyscanmate`
+`pip uninstall pyyorozuya`
 
 ・仮想環境終了
 
@@ -58,7 +58,7 @@
 
 ・アップグレード
 
-`pip install –upgrade pyscanmate`
+`pip install –upgrade pyyorozuya`
 
 ## 関数一覧
 

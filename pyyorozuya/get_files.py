@@ -1,6 +1,6 @@
 import os
 import re
-from pyscanmate.format_txt import format_txt as ft
+from pyyorozuya.format_txt import format_txt as ft
 
 def get_files(path, reg = r'.*$', hidden = False):
     files = []

@@ -1,4 +1,4 @@
-from pyscanmate.get_files import get_files as gf
+from pyyorozuya.get_files import get_files as gf
 
 def count_line(path, trim_blank = False):
     line_counter = 0
